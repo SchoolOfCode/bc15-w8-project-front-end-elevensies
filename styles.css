@@ -11,28 +11,6 @@ body {
   justify-content: center;
 }
 
-.projects-list {
-  list-style: none;
-  /* Remove default list styles */
-  padding: 0;
-  /* Remove default padding for the list */
-}
-
-.list-item {
-  background-color: white;
-  /* Set background color for list items */
-  border: 1px solid #0000001a;
-  /* Faint black border */
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
-  /* Faint shadow */
-  margin: 10px;
-  /* Add margin around list items */
-  padding: 20px;
-  /* Add padding inside list items */
-  text-align: center;
-  /* Center text inside list items */
-}
-
 /* Logo selector is a grid which contains both the compass and text */
 .logo {
   width: 70%;
@@ -53,18 +31,47 @@ body {
   max-width: 125px;
 }
 
-/* .search-bar { */
-/* margin applied to give some distance between the logo  */
-/* margin-top: 1rem; */
-/* Align the search bar to the center of the page  */
-/* } */
-
 /* Selector for the main html  */
 .main {
   background-color: green;
   position: relative;
   top: -1.3rem;
 }
+
+.projects-list {
+  list-style: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding for the list */
+}
+
+.list-item {
+  background-color: white;
+  /* Set background color for list items */
+  border: 1px solid #0000001a;
+  /* Faint black border */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
+  /* Faint shadow */
+  margin: 10px;
+  /* Add margin around list items */
+  padding: 20px;
+  /* Add padding inside list items */
+  text-align: center;
+  /* Center text inside list items */
+  display: flex;
+  flex-direction: row;
+}
+
+.suggested-p-image {
+  width: 20%;
+  height: auto;
+}
+
+/* .search-bar { */
+/* margin applied to give some distance between the logo  */
+/* margin-top: 1rem; */
+/* Align the search bar to the center of the page  */
+/* } */
 
 .footer {
   background-color: red;
