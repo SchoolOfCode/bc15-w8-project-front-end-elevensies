@@ -1,11 +1,27 @@
 .header {
-    background-color: blue;
+  background-color: blue;
 }
 
 .main {
-    background-color: green;
+  background-color: green;
+}
+
+.logo {
+  width: min-content;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+}
+
+.compass-logo {
+  max-width: 45px;
+}
+
+.text-logo {
+  justify-content: center;
+  max-width: 125px;
 }
 
 .footer {
-    background-color: red;
+  background-color: red;
 }
