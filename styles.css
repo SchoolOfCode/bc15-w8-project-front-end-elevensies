@@ -6,7 +6,7 @@ body {
 .header {
   display: flex;
   width: 100%;
-  background-color: blue;
+  background-color: yellow;
   align-items: center;
   justify-content: center;
 }
