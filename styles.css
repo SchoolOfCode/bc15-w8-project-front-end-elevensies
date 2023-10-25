@@ -1,9 +1,14 @@
+body {
+  width: 95%;
+  height: 95%;
+}
+
 .header {
   display: flex;
   width: 100%;
   background-color: blue;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* Remove the bullet points from the list */
@@ -19,10 +24,13 @@
   align-items: center;
   gap: 0.5rem;
   justify-content: center;
+  /* position: relative;
+  left: -1rem; */
 }
 
-.list-item{
+.list-item {
   border: 1px solid black;
+  height: 3rem;
 }
 
 /* Logo selector is a grid which contains both the compass and text */
@@ -43,16 +51,17 @@
   max-width: 125px;
 }
 
-.search-bar {
-  /* margin applied to give some distance between the logo  */
-  margin-top: 1rem;
- /* Align the search bar to the center of the page  */
- 
-}
+/* .search-bar { */
+/* margin applied to give some distance between the logo  */
+/* margin-top: 1rem; */
+/* Align the search bar to the center of the page  */
+/* } */
 
 /* Selector for the main html  */
 .main {
   background-color: green;
+  position: relative;
+  top: -1.3rem;
 }
 
 .footer {
@@ -70,4 +79,7 @@
   /* position: relative; */
   /* left: 7rem; */
   width: 100%;
+  margin-top: 1rem;
+  position: relative;
+  top: -0.6rem;
 }
