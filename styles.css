@@ -23,7 +23,7 @@ body {
   /* Set background color for list items */
   border: 1px solid #0000001a;
   /* Faint black border */
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
   /* Faint shadow */
   margin: 10px;
   /* Add margin around list items */
