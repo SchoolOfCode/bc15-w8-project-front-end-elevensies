@@ -11,26 +11,26 @@ body {
   justify-content: center;
 }
 
-/* Remove the bullet points from the list */
-.projects-list > li {
-  list-style-type: none;
-}
-
-/* Create a grid for all of the list items  */
 .projects-list {
-  display: grid;
-  grid-template-rows: repeat(5, 3fr);
-  border: 1px solid black;
-  align-items: center;
-  gap: 0.5rem;
-  justify-content: center;
-  /* position: relative;
-  left: -1rem; */
+  list-style: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding for the list */
 }
 
 .list-item {
-  border: 1px solid black;
-  height: 3rem;
+  background-color: white;
+  /* Set background color for list items */
+  border: 1px solid #0000001a;
+  /* Faint black border */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  /* Faint shadow */
+  margin: 10px;
+  /* Add margin around list items */
+  padding: 20px;
+  /* Add padding inside list items */
+  text-align: center;
+  /* Center text inside list items */
 }
 
 /* Logo selector is a grid which contains both the compass and text */
@@ -41,10 +41,12 @@ body {
   justify-content: center;
   grid-template-columns: auto auto;
 }
+
 /* Compass Selector is the compass image itself within the header  */
 .compass-logo {
   max-width: 45px;
 }
+
 /* Text-logo selector is the text within the header displaying "soc projecthub" */
 .text-logo {
   justify-content: center;
