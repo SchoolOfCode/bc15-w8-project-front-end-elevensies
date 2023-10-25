@@ -9,3 +9,16 @@
 .footer {
     background-color: red;
 }
+
+.search {
+  display: grid;
+  grid-template-columns: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+.search-bar {
+  /* position: relative; */
+  /* left: 7rem; */
+  width: 100%;
+}
