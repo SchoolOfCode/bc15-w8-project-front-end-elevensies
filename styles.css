@@ -1,25 +1,39 @@
 .header {
+  display: flex;
+  width: auto;
   background-color: blue;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.main {
-  background-color: green;
-}
-
+/* Logo selector is a grid which contains both the compass and text */
 .logo {
   width: min-content;
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: auto auto;
 }
-
+/* Compass Selector is the compass image itself within the header  */
 .compass-logo {
   max-width: 45px;
 }
-
+/* Text-logo selector is the text within the header displaying "soc projecthub" */
 .text-logo {
   justify-content: center;
   max-width: 125px;
+}
+
+.search-bar {
+  /* margin applied to give some distance between the logo  */
+  margin-top: 1rem;
+ /* Align the search bar to the center of the page  */
+ 
+}
+
+/* Selector for the main html  */
+.main {
+  background-color: green;
 }
 
 .footer {
