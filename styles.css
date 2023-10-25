@@ -100,3 +100,7 @@ footer {
   margin: auto;
   align-items: center;
 }
+
+.footer > svg {
+  width: 56px;
+}
