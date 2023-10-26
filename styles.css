@@ -19,32 +19,63 @@ p {
   font-size: 15px;
 }
 
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  height: 72px;
+}
+
 .header {
   display: flex;
-  width: 100%;
-  background-color: blue;
+  width: 75vw;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 /* Logo selector is a grid which contains both the compass and text */
 .logo {
-  width: 70%;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-  grid-template-columns: auto auto;
 }
 
 /* Compass Selector is the compass image itself within the header  */
 .compass-logo {
-  max-width: 45px;
+  width: 45px;
 }
 
 /* Text-logo selector is the text within the header displaying "soc projecthub" */
+.SOCProjectHub-icon {
+  display: flex;
+  align-items: center;
+}
+
 .text-logo {
+  width: 150px
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  max-width: 125px;
+}
+
+.menu-icon li {
+  padding: 0;
+}
+.material-symbols-outlined{
+  transform: scale(1.5);
+  padding-right: 20px;
 }
 
 /* Drop-down menu */
@@ -52,14 +83,16 @@ p {
 .main-menu .menu-item a .material-symbols-outlined {
   /* Add your styles for the menu icon here */
   font-size: 24px;
-  color: #ffcc00;
+  color: #227b71;
+  display: flex;
+  align-items: center;
   /* Add any other styles you want for the menu icon here */
 }
 
 /* Target the main menu list */
 .main-menu {
+
   list-style: none;
-  background-color: red;
   text-align: right; /* Align the text to the right */
 }
 
@@ -72,7 +105,7 @@ p {
 /* Target links within top-level menu items */
 .main-menu .menu-item a {
   display: block;
-  padding: 20px 25px;
+  padding: 0;
   color: #fff;
   text-decoration: none;
   text-align: center;
@@ -118,6 +151,7 @@ p {
 }
 
 .projects-list {
+
   list-style: none;
   /* Remove default list styles */
   padding: 0;
@@ -126,6 +160,7 @@ p {
 }
 
 .list-item {
+
   background-color: #f9f9f9;
   /* Set background color for list items */
 
