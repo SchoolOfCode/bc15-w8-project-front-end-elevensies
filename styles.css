@@ -33,6 +33,7 @@ a {
   display: flex;
   justify-content: flex-end;
   height: 72px;
+  width: 375px;
 }
 
 .header {
@@ -47,11 +48,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  position: relative;
+  right: -1rem;
+  }
 
 /* Compass Selector is the compass image itself within the header  */
 .compass-logo {
-  width: 45px;
+  width: 65px;
 }
 
 /* Text-logo selector is the text within the header displaying "soc projecthub" */
@@ -61,7 +64,7 @@ a {
 }
 
 .text-logo {
-  width: 150px
+  width: 170px
 }
 
 .menu-icon {
@@ -74,8 +77,11 @@ a {
   padding: 0;
 }
 .material-symbols-outlined{
-  transform: scale(1.5);
+  transform: scale(1.75);
   padding-right: 20px;
+  position: relative;
+  top: 0.2rem;
+  right: -2.5rem;
 }
 
 /* Drop-down menu */
