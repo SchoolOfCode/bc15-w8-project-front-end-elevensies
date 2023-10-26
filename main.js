@@ -29,6 +29,7 @@ function displaySearchData(searchData) {
     const dataContainer = document.createElement("div");
     // set class of new div
     dataContainer.setAttribute("class", "data-container createdData");
+    dataContainer.setAttribute("id", `${searchData[i].url}`)
     //create image-container div
     const imageContainer = document.createElement("div");
     // set class of new div
