@@ -39,7 +39,7 @@ a {
   display: flex;
   justify-content: flex-end;
   height: 72px;
-  /* width: 375px; */
+  width: 375px;
 }
 
 .header {
