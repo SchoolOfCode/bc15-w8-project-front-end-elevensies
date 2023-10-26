@@ -130,11 +130,13 @@ a {
 
 /* Style for the dropdown menu itself */
 .main-menu .menu-item .dropdown-menu {
-  width: 25vw;
+  width: 50vw;
   background: #ffffff;
   color:#227b71;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
-  position: absolute;
+  position: fixed;
+  right: 10%;
+  top: 5.5rem;
   z-index: 999;
   display: none;
   right: 0; /* Position the dropdown to the right */
