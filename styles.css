@@ -2,6 +2,12 @@ body {
   margin: auto;
 }
 
+.blank-space {
+  background-color: red;
+  height: 3rem;
+  width: 3rem;
+}
+
 h2 {
   margin: 0;
   font-weight: 500;
@@ -33,7 +39,7 @@ a {
   display: flex;
   justify-content: flex-end;
   height: 72px;
-  width: 375px;
+  /* width: 375px; */
 }
 
 .header {
@@ -50,7 +56,7 @@ a {
   justify-content: center;
   position: relative;
   right: -1rem;
-  }
+}
 
 /* Compass Selector is the compass image itself within the header  */
 .compass-logo {
@@ -64,7 +70,7 @@ a {
 }
 
 .text-logo {
-  width: 170px
+  width: 170px;
 }
 
 .menu-icon {
@@ -76,7 +82,7 @@ a {
 .menu-icon li {
   padding: 0;
 }
-.material-symbols-outlined{
+.material-symbols-outlined {
   transform: scale(1.75);
   padding-right: 20px;
   position: relative;
@@ -97,7 +103,6 @@ a {
 
 /* Target the main menu list */
 .main-menu {
-
   list-style: none;
   text-align: right; /* Align the text to the right */
 }
@@ -144,6 +149,13 @@ a {
   text-align: left; /* Align the dropdown items to the left */
 }
 
+.menu-title {
+  color: #227b71;
+}
+/* .dropdown-menu > ul:nth-child(2) a {
+  color: #227b71;
+} */
+
 /* Selector for the main html  */
 .main {
   background-color: white;
@@ -157,7 +169,6 @@ a {
 }
 
 .projects-list {
-
   list-style: none;
   /* Remove default list styles */
   padding: 0;
@@ -166,7 +177,6 @@ a {
 }
 
 .list-item {
-
   background-color: #f9f9f9;
   /* Set background color for list items */
 
@@ -242,7 +252,17 @@ a {
   /* left: 7rem; */
   width: 95vw;
   margin-top: 1rem;
+  border: none;
+  border-radius: 2.5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #f4f4f4;
+  text-align: center;
+  height: 27px;
 }
+.search-bar::placeholder {
+  color: #227b71; /* Change color of the placeholder text */
+}
+
 .border-black-2px {
   border: black 2px solid;
 }
