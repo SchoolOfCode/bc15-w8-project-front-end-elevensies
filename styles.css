@@ -146,6 +146,10 @@ p {
   align-items: center;
 }
 
+.list-item:last-of-type {
+  margin-bottom: 100px;
+}
+
 .data-container {
   background-color: white;
   border-radius: 5px;
