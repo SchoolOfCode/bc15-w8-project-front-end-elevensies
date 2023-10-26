@@ -50,7 +50,7 @@ a {
   justify-content: center;
   position: relative;
   right: -1rem;
-  }
+}
 
 /* Compass Selector is the compass image itself within the header  */
 .compass-logo {
@@ -64,7 +64,7 @@ a {
 }
 
 .text-logo {
-  width: 170px
+  width: 170px;
 }
 
 .menu-icon {
@@ -76,7 +76,7 @@ a {
 .menu-icon li {
   padding: 0;
 }
-.material-symbols-outlined{
+.material-symbols-outlined {
   transform: scale(1.75);
   padding-right: 20px;
   position: relative;
@@ -97,7 +97,6 @@ a {
 
 /* Target the main menu list */
 .main-menu {
-
   list-style: none;
   text-align: right; /* Align the text to the right */
 }
@@ -132,7 +131,7 @@ a {
 .main-menu .menu-item .dropdown-menu {
   width: 50vw;
   background: #ffffff;
-  color:#227b71;
+  color: #227b71;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
   position: fixed;
   right: 10%;
@@ -141,7 +140,7 @@ a {
   display: none;
   right: 0; /* Position the dropdown to the right */
   text-align: left;
-    /* Align the dropdown items to the left */
+  /* Align the dropdown items to the left */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -166,7 +165,6 @@ a {
 }
 
 .projects-list {
-
   list-style: none;
   /* Remove default list styles */
   padding: 0;
@@ -175,7 +173,6 @@ a {
 }
 
 .list-item {
-
   background-color: #f9f9f9;
   /* Set background color for list items */
 
@@ -251,6 +248,25 @@ a {
   /* left: 7rem; */
   width: 95vw;
   margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.578);
+  background-color: #f4f4f4;
+  text-align: center;
+  height: 27px;
+  border-bottom: 1.5px solid #ccc;
+}
+
+.search-bar::placeholder {
+  color: #227b71;
+  font-size: 15px;
+}
+
+.search-icon {
+  height: 1.1rem;
+  position: absolute;
+  top: 5.75rem;
+  padding-left: 0.5rem;
 }
 .border-black-2px {
   border: black 2px solid;
