@@ -184,15 +184,6 @@ p {
 /* } */
 
 /* Selector for the main html  */
-.main {
-  background-color: green;
-  position: relative;
-  top: -1.3rem;
-}
-
-.footer {
-  background-color: red;
-}
 
 .search {
   display: flex;
