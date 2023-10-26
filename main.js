@@ -66,3 +66,11 @@ async function getAndDisplayAllData() {
 }
 
 addEventListener("load", getAndDisplayAllData);
+
+// Create a function that deletes the suggested projects
+
+// Create a function to get project by coding language
+
+// Create a function to get project by difficulty
+
+// Event listeners to the different a tags
