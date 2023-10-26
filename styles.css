@@ -47,6 +47,67 @@ p {
   max-width: 125px;
 }
 
+/* Drop-down menu */
+/* Target the main navigation menu item */
+.main-menu .menu-item a .material-symbols-outlined {
+  /* Add your styles for the menu icon here */
+  font-size: 24px;
+  color: #ffcc00;
+  /* Add any other styles you want for the menu icon here */
+}
+
+/* Target the main menu list */
+.main-menu {
+  list-style: none;
+  background-color: red;
+  text-align: right; /* Align the text to the right */
+}
+
+/* Target top-level menu items */
+.main-menu .menu-item {
+  display: inline-block;
+  position: relative;
+}
+
+/* Target links within top-level menu items */
+.main-menu .menu-item a {
+  display: block;
+  padding: 20px 25px;
+  color: #FFF;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Target dropdown menu items */
+.main-menu .menu-item .dropdown-menu li {
+  display: block;
+}
+
+/* Display the dropdown menu on hover */
+.main-menu .menu-item:hover .dropdown-menu {
+  display: block;
+}
+
+/* Style for the dropdown menu itself */
+.main-menu .menu-item .dropdown-menu {
+  width: auto;
+  background: #22438C;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  right: 0; /* Position the dropdown to the right */
+}
+
+/* Style for the dropdown menu items */
+.main-menu .menu-item .dropdown-menu li a {
+  font-size: 16px; /* Adjust the font size for dropdown items */
+  text-align: left; /* Align the dropdown items to the left */
+}
+
+
+
+
 /* Selector for the main html  */
 .main {
   background-color: white;
