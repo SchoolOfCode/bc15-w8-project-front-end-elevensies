@@ -30,7 +30,7 @@ function displaySearchData(searchData) {
     // create img tag
     const suggestedPImage = document.createElement("img");
     // set class of new div
-    suggestedPImage.setAttribute("class", "suggestedPImage createdData");
+    suggestedPImage.setAttribute("class", "suggested-p-image createdData");
     suggestedPImage.setAttribute("src", "./Images/HTML.png");
     suggestedPImage.setAttribute("alt", "html");
     //new div called project-text
