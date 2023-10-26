@@ -223,10 +223,9 @@ a {
   align-items: flex-start;
 }
 
-/* .suggested-p-image {
-  width: 20%;
-  height: auto;
-} */
+.suggested-p-image {
+  height: 50px;
+}
 
 /* .search-bar { */
 /* margin applied to give some distance between the logo  */
@@ -294,3 +293,4 @@ footer {
 .footer > svg {
   width: 56px;
 }
+
