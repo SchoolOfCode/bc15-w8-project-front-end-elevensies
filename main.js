@@ -31,7 +31,14 @@ function displaySearchData(searchData) {
     const suggestedPImage = document.createElement("img");
     // set class of new div
     suggestedPImage.setAttribute("class", "suggested-p-image createdData");
-    suggestedPImage.setAttribute("src", "./Images/HTML.png");
+    suggestedPImage.setAttribute("src", "");
+    if (searchData[i].language == "HTML"){
+        suggestedPImage.src = "./Images/HTML.png"
+    } else if (searchData[i].language == "CSS") {
+        suggestedPImage.src = "./Images/CSS.png"
+    } else if (searchData[i].language == "JS") {
+        suggestedPImage.src = "./Images/JS.png"
+    }
     suggestedPImage.setAttribute("alt", "html");
     //new div called project-text
     const projectText = document.createElement("div");
