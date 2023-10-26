@@ -6,6 +6,15 @@ const JSButton = document.querySelector("#JavaScript");
 const EasyButton = document.querySelector("#Easy");
 const MediumButton = document.querySelector("#Medium");
 const DifficultButton = document.querySelector("#Difficult");
+
+// Event listeners for each of the individual suggested projects, id starts with 0 as this was initialised in the for loop
+
+const suggestedProject1 = document.getElementById("project0");
+const suggestedProject2 = document.getElementById("project1");
+const suggestedProject3 = document.getElementById("project2");
+const suggestedProject4 = document.getElementById("project3");
+const suggestedProject5 = document.getElementById("project4");
+
 // Function to do API call, retrieves json response and set it to the data variable
 
 async function getAllProjects() {
@@ -29,7 +38,6 @@ function displaySearchData(searchData) {
     const dataContainer = document.createElement("div");
     // set class of new div
     dataContainer.setAttribute("class", "data-container createdData");
-    dataContainer.setAttribute("id", `${searchData[i].url}`)
     //create image-container div
     const imageContainer = document.createElement("div");
     // set class of new div
@@ -53,6 +61,8 @@ function displaySearchData(searchData) {
     projectText.setAttribute("class", "project-text createdData");
     //create h3 element
     const projectTitle = document.createElement("h3");
+    // Set Project ID
+    projectTitle.setAttribute("id", `project${[i]}`);
     //set inner text
     projectTitle.innerHTML = `${searchData[i].name}`;
     // create p element
@@ -121,6 +131,7 @@ async function getAndDisplayLanguage(Lang) {
   displaySearchData(returnData);
 }
 // Event listeners to the different a tags
+
 addEventListener("load", getAndDisplayAllData);
 logoButton.addEventListener("click", getAndDisplayAllData);
 
@@ -143,3 +154,4 @@ MediumButton.addEventListener("click", () => {
 DifficultButton.addEventListener("click", () => {
   getAndDisplayDifficulty("Difficult");
 });
+
