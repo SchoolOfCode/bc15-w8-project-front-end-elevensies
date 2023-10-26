@@ -1,4 +1,5 @@
 const projectsList = document.querySelector(".projects-list");
+const logoButton = document.querySelector(".logo");
 // Function to do API call, retrieves json response and set it to the data variable
 
 async function getAllProjects() {
@@ -6,7 +7,6 @@ async function getAllProjects() {
     method: "GET",
   });
   const data = await response.json();
-  console.log(data.data);
   return data.data;
 }
 
@@ -32,12 +32,12 @@ function displaySearchData(searchData) {
     // set class of new div
     suggestedPImage.setAttribute("class", "suggested-p-image createdData");
     suggestedPImage.setAttribute("src", "");
-    if (searchData[i].language == "HTML"){
-        suggestedPImage.src = "./Images/HTML.png"
+    if (searchData[i].language == "HTML") {
+      suggestedPImage.src = "./Images/HTML.png";
     } else if (searchData[i].language == "CSS") {
-        suggestedPImage.src = "./Images/CSS.png"
+      suggestedPImage.src = "./Images/CSS.png";
     } else if (searchData[i].language == "JS") {
-        suggestedPImage.src = "./Images/JS.png"
+      suggestedPImage.src = "./Images/JS.png";
     }
     suggestedPImage.setAttribute("alt", "html");
     //new div called project-text
@@ -59,25 +59,40 @@ function displaySearchData(searchData) {
     dataContainer.appendChild(imageContainer);
     dataContainer.appendChild(projectText);
     listItem.appendChild(dataContainer);
-
-    console.log(listItem);
-
     projectsList.appendChild(listItem);
   }
 }
 
 async function getAndDisplayAllData() {
   const returnData = await getAllProjects();
-  // deleteOldData();
+  deleteOldData();
   displaySearchData(returnData);
 }
 
-addEventListener("load", getAndDisplayAllData);
-
 // Create a function that deletes the suggested projects
+function deleteOldData() {
+  let removedData = document.getElementsByClassName("createdData");
+  while (removedData[0]) {
+    removedData[0].parentNode.removeChild(removedData[0]);
+  }
+}
 
 // Create a function to get project by coding language
+async function getProjectsByDifficulty(level) {
+  const response = await fetch(
+    `http://localhost:3000/projects/difficulty?difficulty=${level}`,
+    {
+      method: "GET",
+    }
+  );
+  const data = await response.json();
+  console.log(data.data);
+  return data.data;
+}
 
 // Create a function to get project by difficulty
 
 // Event listeners to the different a tags
+addEventListener("load", getAndDisplayAllData);
+logoButton.addEventListener("click", deleteOldData);
+getProjectsByDifficulty("Easy");
