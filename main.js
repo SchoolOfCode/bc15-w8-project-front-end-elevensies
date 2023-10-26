@@ -1,5 +1,11 @@
 const projectsList = document.querySelector(".projects-list");
 const logoButton = document.querySelector(".logo");
+const HTMLButton = document.querySelector("#HTML");
+const CSSButton = document.querySelector("#CSS");
+const JSButton = document.querySelector("#JavaScript");
+const EasyButton = document.querySelector("#Easy");
+const MediumButton = document.querySelector("#Medium");
+const DifficultButton = document.querySelector("#Difficult");
 // Function to do API call, retrieves json response and set it to the data variable
 
 async function getAllProjects() {
@@ -80,7 +86,7 @@ function deleteOldData() {
 // Create a function to get project by coding language
 async function getProjectsByDifficulty(level) {
   const response = await fetch(
-    `http://localhost:3000/projects/difficulty?difficulty=${level}`,
+    `http://localhost:3000/projects/difficulty/${level}`,
     {
       method: "GET",
     }
@@ -91,8 +97,48 @@ async function getProjectsByDifficulty(level) {
 }
 
 // Create a function to get project by difficulty
+async function getProjectsByLanguage(lang) {
+  const response = await fetch(
+    `http://localhost:3000/projects/language/${lang}`,
+    {
+      method: "GET",
+    }
+  );
+  const data = await response.json();
+  console.log(data.data);
+  return data.data;
+}
 
+async function getAndDisplayDifficulty(Level) {
+  const returnData = await getProjectsByDifficulty(Level);
+  deleteOldData();
+  displaySearchData(returnData);
+}
+async function getAndDisplayLanguage(Lang) {
+  const returnData = await getProjectsByLanguage(Lang);
+  deleteOldData();
+  displaySearchData(returnData);
+}
 // Event listeners to the different a tags
 addEventListener("load", getAndDisplayAllData);
-logoButton.addEventListener("click", deleteOldData);
-getProjectsByDifficulty("Easy");
+logoButton.addEventListener("click", getAndDisplayAllData);
+
+HTMLButton.addEventListener("click", () => {
+  getAndDisplayLanguage("HTML");
+});
+CSSButton.addEventListener("click", () => {
+  getAndDisplayLanguage("CSS");
+});
+JSButton.addEventListener("click", () => {
+  getAndDisplayLanguage("JS");
+});
+
+EasyButton.addEventListener("click", () => {
+  getAndDisplayDifficulty("Easy");
+});
+MediumButton.addEventListener("click", () => {
+  getAndDisplayDifficulty("Medium");
+});
+DifficultButton.addEventListener("click", () => {
+  getAndDisplayDifficulty("Difficult");
+});
