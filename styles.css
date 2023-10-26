@@ -1,6 +1,22 @@
 body {
-  width: 95%;
-  height: 95%;
+  margin: auto;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
 }
 
 .header {
@@ -9,28 +25,6 @@ body {
   background-color: blue;
   align-items: center;
   justify-content: center;
-}
-
-.projects-list {
-  list-style: none;
-  /* Remove default list styles */
-  padding: 0;
-  /* Remove default padding for the list */
-}
-
-.list-item {
-  background-color: white;
-  /* Set background color for list items */
-  border: 1px solid #0000001a;
-  /* Faint black border */
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
-  /* Faint shadow */
-  margin: 10px;
-  /* Add margin around list items */
-  padding: 20px;
-  /* Add padding inside list items */
-  text-align: center;
-  /* Center text inside list items */
 }
 
 /* Logo selector is a grid which contains both the compass and text */
@@ -53,25 +47,87 @@ body {
   max-width: 125px;
 }
 
+/* Selector for the main html  */
+.main {
+  background-color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #227b71;
+}
+
+.projects-title {
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.projects-list {
+  list-style: none;
+  /* Remove default list styles */
+  padding: 0;
+  /* Remove default padding for the list */
+  margin: auto;
+}
+
+.list-item {
+  background-color: #f9f9f9;
+  /* Set background color for list items */
+
+  /* Faint black border */
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.578);
+  /* Faint shadow */
+  margin: 10px;
+  /* Add margin around list items */
+  padding: 10px;
+  /* Add padding inside list items */
+
+  /* Center text inside list items */
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+.data-container {
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  height: 60px;
+  width: 100%;
+  padding: 0;
+}
+
+.image-container {
+  height: 50px;
+  width: 50px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  padding-left: 10px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* .suggested-p-image {
+  width: 20%;
+  height: auto;
+} */
+
 /* .search-bar { */
 /* margin applied to give some distance between the logo  */
 /* margin-top: 1rem; */
 /* Align the search bar to the center of the page  */
 /* } */
 
-/* Selector for the main html  */
-.main {
-  background-color: green;
-  position: relative;
-  top: -1.3rem;
-}
-
 .footer {
   background-color: red;
 }
 
 .search {
-  display: grid;
+  display: flex;
   grid-template-columns: 100%;
   align-content: center;
   justify-content: center;
@@ -80,8 +136,6 @@ body {
 .search-bar {
   /* position: relative; */
   /* left: 7rem; */
-  width: 100%;
+  width: 95vw;
   margin-top: 1rem;
-  position: relative;
-  top: -0.6rem;
 }

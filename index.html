@@ -1,86 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>soc projecthub</title>
-  </head>
-  <body>
-    <header>
-      <div class="header">
-        <div class="logo">
-          <div class="compass-icon">
-            <img class="compass-logo" src="../Images/compass.png" />
-          </div>
-          <div class="SOCProjectHub-icon">
-            <img class="text-logo" src="../Images/logo-text.png" />
-          </div>
 
-          <!-- <svg id="hamburger" class="Header__toggle-svg" viewbox="0 0 60 40">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>soc projecthub</title>
+</head>
+
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <div class="compass-icon">
+          <img class="compass-logo" src="../Images/compass.png" />
+        </div>
+        <div class="SOCProjectHub-icon">
+          <img class="text-logo" src="../Images/logo-text.png" />
+        </div>
+
+        <!-- <svg id="hamburger" class="Header__toggle-svg" viewbox="0 0 60 40">
             <g stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
               <path id="top-line" d="M10,10 L50,10 Z"></path>
               <path id="middle-line" d="M10,20 L50,20 Z"></path>
               <path id="bottom-line" d="M10,30 L50,30 Z"></path>
             </g>
           </svg> -->
+      </div>
+    </div>
+    <div class="search">
+      <form action="/search" method="GET">
+        <input class="search-bar" type="search" id="project-search" name="project-search" placeholder="🔎 search" />
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <div class="main">
+      <div class="suggested-project">
+        <div class="projects-title">
+          <h2>Suggested Projects</h2>
+        </div>
+        <div class="projects-containers">
+          <ul class="projects-list">
+            <li class="list-item">
+              <!-- WE NEED TO CREATE SEPARATE CLASSES FOR THE DIFFERENT IMAGES COS THEY EACH HAVE A DIFFERENT SIZE -->
+              <div class="data-container">
+                <div class="image-container">
+                  <img src="../Images/HTML.png" alt="html" class="suggested-p-image" height="50px" />
+                </div>
+                <div class="project-text">
+                  <h3>User Login Field Validation</h3>
+                  <p>Create a logic screen for your website</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="data-container">
+                <div class="image-container">
+                  <img src="../Images/CSS.png" alt="css" class="suggested-p-image" height="50px" />
+                </div>
+                <div class="project-text">
+                  <h3>Registration Form</h3>
+                  <p>Create a registration form for your website</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="data-container">
+                <div class="image-container">
+                  <img class="suggested-p-image" src="../Images/JS.png" alt="js" height="50px" />
+                </div>
+                <div class="project-text">
+                  <h3>JS Typewriter</h3>
+                  <p>Create your own typewriter</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="data-container">
+                <div class="image-container">
+                  <img class="suggested-p-image" src="../Images/JS.png" alt="js" />
+                </div>
+                <div class="project-text">
+                  <h3>Memory Card Game</h3>
+                  <p>Create a fun card matching game</p>
+                </div>
+              </div>
+            </li>
+
+            <li class="list-item">
+              <div class="data-container">
+                <div class="image-container">
+                  <img class="suggested-p-image" src="../Images/JS.png" alt="js" />
+                </div>
+                <div class="project-text">
+                  <h3>Flashcard Maker</h3>
+                  <p>Create flashcard maker to help you revise</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="search">
-        <form action="/search" method="GET">
-          <input
-            class="search-bar"
-            type="search"
-            id="project-search"
-            name="project-search"
-            placeholder="🔎 search"
-          />
-        </form>
-      </div>
-    </header>
+    </div>
+    <script src="main.js"></script>
+  </main>
 
-    <main>
-      <div class="main">
-        <div class="suggested-project">
-          <div class="projects-title">
-            <h1>Suggested Projects</h1>
-          </div>
-          <div class="projects-containers">
-            <ul class="projects-list">
-              <li class="list-item">
-                <div class="suggested-p-image">Item 1: registration form:</div>
-                <div class="project-text"></div>
-              </li>
-              <li class="list-item">
-                <div class="suggested-p-image">Item 2</div>
-                <div class="project-text"></div>
-              </li>
-              <li class="list-item">
-                <div class="suggested-p-image">Item 3</div>
-                <div class="project-text"></div>
-              </li>
-              <li class="list-item">
-                <div class="suggested-p-image">Item 4</div>
-                <div class="project-text"></div>
-              </li>
-              <li class="list-item">
-                <div class="suggested-p-image">Item 5</div>
-                <div class="project-text"></div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <script src="main.js"></script>
-    </main>
+  <footer>
+    <div class="footer">
+      <h1>FOOTER</h1>
+      <div class="home"></div>
+      <div class="pinned-list"></div>
+      <div class="personal-projects"></div>
+    </div>
+  </footer>
+</body>
 
-    <footer>
-      <div class="footer">
-        <h1>FOOTER</h1>
-        <div class="home"></div>
-        <div class="pinned-list"></div>
-        <div class="personal-projects"></div>
-      </div>
-    </footer>
-  </body>
 </html>
