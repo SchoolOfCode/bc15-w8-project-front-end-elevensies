@@ -280,6 +280,7 @@ footer {
   bottom: 0;
   display: flex;
   align-items: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .footer {
@@ -293,4 +294,3 @@ footer {
 .footer > svg {
   width: 56px;
 }
-
