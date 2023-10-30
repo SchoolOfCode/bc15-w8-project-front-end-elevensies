@@ -10,7 +10,7 @@ const DifficultButton = document.querySelector("#Difficult");
 // Function to do API call, retrieves json response and set it to the data variable
 
 async function getAllProjects() {
-  const response = await fetch("http://localhost:3000/projects", {
+  const response = await fetch("http://localhost:3001/projects", {
     method: "GET",
   });
   const data = await response.json();
@@ -18,7 +18,7 @@ async function getAllProjects() {
 }
 
 async function getProjectById(id) {
-  const response = await fetch(`http://localhost:3000/projects/${id}`, {
+  const response = await fetch(`http://localhost:3001/projects/${id}`, {
     method: "GET",
   });
   const data = await response.json();
@@ -175,7 +175,7 @@ function deleteOldData() {
 // Create a function to get project by coding language
 async function getProjectsByDifficulty(level) {
   const response = await fetch(
-    `http://localhost:3000/projects/difficulty/${level}`,
+    `http://localhost:3001/projects/difficulty/${level}`,
     {
       method: "GET",
     }
@@ -188,7 +188,7 @@ async function getProjectsByDifficulty(level) {
 // Create a function to get project by difficulty
 async function getProjectsByLanguage(lang) {
   const response = await fetch(
-    `http://localhost:3000/projects/language/${lang}`,
+    `http://localhost:3001/projects/language/${lang}`,
     {
       method: "GET",
     }
