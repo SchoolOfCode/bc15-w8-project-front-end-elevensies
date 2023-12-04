@@ -244,6 +244,7 @@ header{
   grid-template-columns: 100%;
   align-content: center;
   justify-content: center;
+  max-width:400px;
 }
 
 .search-bar {
@@ -368,7 +369,7 @@ footer {
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 90vw;
   margin: auto;
   align-items: center;
