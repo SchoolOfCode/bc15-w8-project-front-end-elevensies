@@ -244,7 +244,7 @@ header{
   grid-template-columns: 100%;
   align-content: center;
   justify-content: center;
-  max-width:400px;
+  
 }
 
 .search-bar {
@@ -259,6 +259,7 @@ header{
   text-align: center;
   height: 27px;
   border-bottom: 1.5px solid #ccc;
+  max-width:400px;
 }
 
 .search-bar::placeholder {
